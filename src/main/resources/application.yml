@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: cloud-config
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:///tmp/${user.home}/config
